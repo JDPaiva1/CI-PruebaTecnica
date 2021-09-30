@@ -1,6 +1,7 @@
 <template>
   <footer class="container-fluid">
     <section class="row justify-content-between py-3">
+      <!-- Quick Links -->
       <div class="col-12 col-md-2">
         <h4>Quick Links</h4>
         <nav class="nav flex-column">
@@ -10,6 +11,7 @@
           <a class="nav-link" href="#">Contact</a>
         </nav>
       </div>
+      <!-- Announcements -->
       <div class="col-12 col-md-6">
         <h4>Announcements / Promoted Contect</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum rem accusantium magnam laboriosam quos neque 
@@ -17,11 +19,13 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rerum rem accusantium magnam laboriosam quos neque 
           beatae ex labore qui odit earum quasi.</p>
       </div>
+      <!-- Coming Soon -->
       <div class="col-12 col-md-2">
         <h4>Coming Soon</h4>
         <img src="https://picsum.photos/200" class="footer-image rounded" alt="">
       </div>
     </section>
+    <!-- Rights Reserved -->
     <section class="row text-center">
       <p>©2021 AcmeWidgets. All Rights Reserved. Support: <a href="Support@AcmeWidgets.com">Support@AcmeWidgets.com</a></p>
     </section>

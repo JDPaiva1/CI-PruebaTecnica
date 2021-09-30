@@ -1,5 +1,5 @@
 <template>
-  <Navbar/>
+  <Navbar @openModal="showModal = true" :itemsInCart="cart.length"/>
   <Slider/>
   <section class="container-fluid">
     <h1>Intro Copy Headline</h1>
@@ -8,15 +8,15 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque nesciunt expedita commodi fuga sed!
       Nisi laudantium accusamus voluptate aliquid omnis. Ratione autem praesentium, asperiores facere quis sint at. Laudantium.</p>
   </section>
-  <Items/>
+  <Products @addToCart="addToCart($event)"/>
   <Footer/>
-  <Modal v-if="showModal" @close="showModal = false"/>
+  <Modal v-if="showModal" @closeModal="showModal = false" :cart="cart"/>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
 import Slider from './components/Slider.vue'
-import Items from './components/Items.vue'
+import Products from './components/Products.vue'
 import Footer from './components/Footer.vue'
 import Modal from './components/Modal.vue'
 
@@ -25,12 +25,20 @@ export default {
   components: {
     Navbar,
     Slider,
-    Items,
+    Products,
     Footer,
     Modal
   },
   data() {
-    return { showModal: false }
+    return { 
+      showModal: false,
+      cart: []
+    }
+  },
+  methods: {
+    addToCart(product) {
+      this.cart.push(product);
+    }
   }
 }
 </script>
