@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Navbar/>
+  <Slider/>
+  <section class="container-fluid">
+    <h1>Intro Copy Headline</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque nesciunt expedita commodi fuga sed!
+      Nisi laudantium accusamus voluptate aliquid omnis. Ratione autem praesentium, asperiores facere quis sint at. Laudantium.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque nesciunt expedita commodi fuga sed!
+      Nisi laudantium accusamus voluptate aliquid omnis. Ratione autem praesentium, asperiores facere quis sint at. Laudantium.</p>
+  </section>
+  <Items/>
+  <Footer/>
+  <Modal v-if="showModal" @close="showModal = false"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import Slider from './components/Slider.vue'
+import Items from './components/Items.vue'
+import Footer from './components/Footer.vue'
+import Modal from './components/Modal.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Slider,
+    Items,
+    Footer,
+    Modal
+  },
+  data() {
+    return { showModal: false }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root {
+  --color-primary: #339989;
+  --color-secondary: #7DE2D1;
+  --color-complementary: #22665C;
+  --color-dark: #131515;
+  --color-light: #FFFAFB;
+}
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 </style>
