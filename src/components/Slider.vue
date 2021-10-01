@@ -1,5 +1,5 @@
 <template>
-  <div id="carousel" class="carousel slide carousel-fade d-sm-none d-md-block" data-bs-ride="carousel">
+  <div id="carousel" class="carousel slide carousel-fade d-none d-md-block" data-bs-ride="carousel">
     <!-- Carousel indicators -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -9,13 +9,13 @@
     <!-- Carousel images -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="@/assets/ian-dooley-TT-ROxWj9nA-unsplash.jpg" class="d-block w-100" alt="...">
+        <img src="@/assets/karsten-wurth-karsten-wuerth-IMU55XrxS4E-unsplash.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="@/assets/brooke-cagle-z1B9f48F5dc-unsplash.jpg" class="d-block w-100" alt="...">
+        <img src="@/assets/j-scott-rakozy-CNLKEp0WY4g-unsplash.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="@/assets/felipe-galvan-AhfrA5VQNpM-unsplash.jpg" class="d-block w-100" alt="...">
+        <img src="@/assets/nathan-anderson-kujXUuh1X0o-unsplash.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <!-- Carousel controls -->
@@ -35,9 +35,3 @@ export default {
   name: 'Slider',
 }
 </script>
-
-<style scoped>
-  .carousel-item img {
-    height: 88vh;
-  }
-</style>

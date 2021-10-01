@@ -15,11 +15,11 @@
           <!-- Products in cart -->
           <template v-else>
             <div v-for="product in cart" :key="product.name" class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
+            <div class="row g-0 justify-content-between">
+              <div class="col-4">
                 <img :src="require(`../assets/${product.image}`)" class="img-fluid rounded-start" alt="...">
               </div>
-              <div class="col-md-8">
+              <div class="col-7 col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">{{ product.name }}</h5>
                   <p class="card-text">€{{ product.price }}</p>
@@ -52,6 +52,11 @@ export default {
   .modal {
     display: block;
     background-color: #13151554;
+  }
+  .img-fluid {
+    object-fit: cover;
+    width: 8rem;
+    height: 8rem;
   }
   .btn.btn-primary {
     background-color: var(--color-primary);

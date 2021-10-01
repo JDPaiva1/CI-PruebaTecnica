@@ -1,5 +1,5 @@
 <template>
-  <footer class="container-fluid">
+  <footer class="container-fluid pt-2">
     <section class="row justify-content-between py-3">
       <!-- Quick Links -->
       <div class="col-12 col-md-2">

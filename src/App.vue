@@ -1,13 +1,7 @@
 <template>
   <Navbar @openModal="showModal = true" :itemsInCart="cart.length"/>
   <Slider/>
-  <section class="container-fluid">
-    <h1>Intro Copy Headline</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque nesciunt expedita commodi fuga sed!
-      Nisi laudantium accusamus voluptate aliquid omnis. Ratione autem praesentium, asperiores facere quis sint at. Laudantium.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque nesciunt expedita commodi fuga sed!
-      Nisi laudantium accusamus voluptate aliquid omnis. Ratione autem praesentium, asperiores facere quis sint at. Laudantium.</p>
-  </section>
+  <Intro/>
   <Products @addToCart="addToCart($event)"/>
   <Footer/>
   <Modal v-if="showModal" @closeModal="showModal = false" :cart="cart"/>
@@ -16,6 +10,7 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import Slider from './components/Slider.vue'
+import Intro from './components/Intro.vue'
 import Products from './components/Products.vue'
 import Footer from './components/Footer.vue'
 import Modal from './components/Modal.vue'
@@ -25,6 +20,7 @@ export default {
   components: {
     Navbar,
     Slider,
+    Intro,
     Products,
     Footer,
     Modal

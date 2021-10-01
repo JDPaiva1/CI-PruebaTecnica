@@ -1,6 +1,6 @@
 <template>
   <!-- Products grid -->
-  <section class="container-fluid products-grid my-4">
+  <section class="container-fluid products-grid mt-4 mb-5">
     <!-- Item -->
     <div v-for="product in products" :key="product.name" class="item">
       <img :src="require(`../assets/${product.image}`)" class="item-image rounded mb-2" alt="">
@@ -22,25 +22,25 @@ export default {
           name: "Item Title 1",
           category: "Item Category 1",
           price: 88.00,
-          image: 'photo-1616578492900-ea5a8fc6c341.jpeg',
+          image: 'mahosadha-ong-fVfKqivw8oM-unsplash.jpg',
         },
         {
           name: "Item Title 2",
           category: "Item Category 2",
           price: 88.00,
-          image: 'photo-1616578492900-ea5a8fc6c341.jpeg',
+          image: 'tanner-geringer-EtVqF6-aqT4-unsplash.jpg',
         },
         {
           name: "Item Title 3",
           category: "Item Category 3",
           price: 88.00,
-          image: 'photo-1616578492900-ea5a8fc6c341.jpeg',
+          image: 'yogesh-gosavi-lC90ji6ig18-unsplash.jpg',
         },
         {
           name: "Item Title 4",
           category: "Item Category 4",
           price: 88.00,
-          image: 'photo-1616578492900-ea5a8fc6c341.jpeg',
+          image: 'samuel-robinson-ZunCOhHzcFo-unsplash.jpg',
         }
       ]
     }
